@@ -5,6 +5,7 @@
   --brand-color-grey: #f5f4fa;
   --brand-color-white: #ffffff;
   --brand-color-text-grey: #757575;
+  --brand-color-icons: #afb1b8;
 }
 
 body {
@@ -32,6 +33,10 @@ header {
 .bottom-contact {
   background-color: var(--brand-color-background);
   padding: 60px 0;
+}
+.bottom-contact-container {
+  display: flex;
+  column-gap: 70px;
 }
 .contact {
   font-style: normal;
@@ -61,7 +66,7 @@ header {
 .contact-links {
   list-style-type: none;
   display: flex;
-  justify-content: end;
+  column-gap: 30px;
 }
 .contact-link {
   color: var(--brand-color-text-grey);
@@ -70,7 +75,6 @@ header {
   line-height: 1.1;
   text-decoration: none;
   letter-spacing: 0.02em;
-  padding-left: 50px;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -109,6 +113,70 @@ header {
   box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.icon {
+  fill: var(--brand-color-text-grey);
+  margin-right: 10px;
+}
+.icon:hover,
+.icon:focus {
+  fill: var(--brand-color-blue);
+  cursor: pointer;
+}
+.icon-strengths {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--brand-color-grey);
+}
+.join-us {
+  justify-content: flex-start;
+}
+.join-us-text {
+  color: var(--brand-color-white);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin: 16px 32px 30px 32px;
+}
+.social-footer {
+  display: flex;
+  column-gap: 10px;
+}
+.social-link {
+  fill: var(--brand-color-icons);
+  padding: 12px;
+  display: flex;
+}
+.social-link:hover,
+.social-link:focus {
+  fill: var(--brand-color-white);
+  background-color: var(--brand-color-blue);
+  border-radius: 50% 50%;
+  cursor: pointer;
+}
+.social-link-footer {
+  padding: 12px;
+  fill: var(--brand-color-white);
+  background-color: #ffffff10;
+  border-radius: 50% 50%;
+  display: flex;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.social-link-footer:hover,
+.social-link-footer:focus {
+  fill: var(--brand-color-white);
+  background-color: var(--brand-color-blue);
+  border-radius: 50% 50%;
+  cursor: pointer;
+}
 .list {
   list-style-type: none;
   display: flex;
@@ -124,6 +192,11 @@ header {
   flex-wrap: wrap;
   list-style-type: none;
   gap: 30px;
+}
+.list-portfolio-item:hover,
+.list-portfolio-item:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 .menu {
   background-color: var(--brand-color-white);
@@ -169,7 +242,10 @@ header {
   letter-spacing: 0.03em;
 }
 .motto {
-  background-color: var(--brand-color-background);
+  background-image: url("/goit-markup-hw-04/images/baner.jpg"),
+    linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 200px 0;
   display: flex;
@@ -182,6 +258,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  max-width: 1600px;
 }
 .motto-text {
   color: var(--brand-color-white);
@@ -219,6 +296,38 @@ header {
   padding: 10px 0;
   border-radius: 4px;
   border: none;
+}
+.our-client-text {
+  color: var(--brand-color-black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.our-client {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 30px;
+  margin: 50px 215px 0 215px;
+}
+.our-client-icon {
+  fill: var(--brand-color-icons);
+}
+.our-client-icon:hover,
+.our-client-icon:focus {
+  fill: var(--brand-color-blue);
+  cursor: pointer;
+}
+.our-client-item {
+  list-style: none;
+  border: 1px solid var(--brand-color-icons);
+  border-radius: 4px;
+  padding: 17.71px 32px 14.25px 32px;
+}
+.our-client-item:hover,
+.our-client-item:focus {
+  border-color: var(--brand-color-blue);
 }
 .our-strengths {
   padding-bottom: 0;
@@ -274,7 +383,7 @@ header {
   border-bottom-right-radius: 4px;
 }
 .our-team-dsc {
-  padding: 30px 20px;
+  padding: 30px 20px 0 20px;
 }
 .our-team-text {
   color: var(--brand-color-black);
