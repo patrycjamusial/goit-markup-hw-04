@@ -79,6 +79,7 @@ header {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--brand-color-blue);
+  fill: var(--brand-color-blue);
 }
 .container {
   width: 100%;
@@ -168,7 +169,6 @@ header {
   background-color: #ffffff10;
   border-radius: 50% 50%;
   display: flex;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .social-link-footer:hover,
 .social-link-footer:focus {
@@ -304,12 +304,12 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
 }
 .our-client {
   display: flex;
   justify-content: space-around;
   column-gap: 30px;
-  margin: 50px 215px 0 215px;
 }
 .our-client-icon {
   fill: var(--brand-color-icons);
@@ -328,6 +328,7 @@ header {
 .our-client-item:hover,
 .our-client-item:focus {
   border-color: var(--brand-color-blue);
+  cursor: pointer;
 }
 .our-strengths {
   padding-bottom: 0;
