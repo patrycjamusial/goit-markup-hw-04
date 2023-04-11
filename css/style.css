@@ -79,6 +79,9 @@ header {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--brand-color-blue);
+}
+.contact-link:hover .icon,
+.contact-link:focus .icon {
   fill: var(--brand-color-blue);
 }
 .container {
@@ -314,21 +317,26 @@ header {
 .our-client-icon {
   fill: var(--brand-color-icons);
 }
-.our-client-icon:hover,
-.our-client-icon:focus {
-  fill: var(--brand-color-blue);
-  cursor: pointer;
-}
+
 .our-client-item {
   list-style: none;
+}
+
+.our-client-link {
+  display: flex;
   border: 1px solid var(--brand-color-icons);
   border-radius: 4px;
   padding: 17.71px 32px 14.25px 32px;
 }
-.our-client-item:hover,
-.our-client-item:focus {
+.our-client-link:hover,
+.our-client-link:focus {
   border-color: var(--brand-color-blue);
   cursor: pointer;
+}
+
+.our-client-link:hover .our-client-icon,
+.our-client-link:focus .our-client-icon {
+  fill: var(--brand-color-blue);
 }
 .our-strengths {
   padding-bottom: 0;
